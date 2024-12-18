@@ -4,6 +4,9 @@ const router = express.Router();
 const movie = require("../model/movie");
 
 
+// POST Route to create new movie
+// it also validates the inputs, make sure it should not be empty
+// then, validate if movie already present in database
 
 router.post("/", async(req,res)=>{
     try {
@@ -31,6 +34,7 @@ router.post("/", async(req,res)=>{
     }
 });
 
+// GET route to get all movies details
 router.get("/", ((req,res)=>{
     movie.find({}, (err, result)=>{
         if(err){
