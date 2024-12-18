@@ -1,3 +1,5 @@
+// This file will have database connection details
+// currently its pointing to local database
 
 const mongoose = require("mongoose");
 

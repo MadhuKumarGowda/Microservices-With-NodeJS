@@ -1,3 +1,8 @@
+// This file will have schema for users
+// we can define our schema with validation as well
+// i have added only unique validation
+// we can have required ... validation
+
 const mongoose = require("mongoose");
 
 const userSchema = new mongoose.Schema({
