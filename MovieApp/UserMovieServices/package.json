@@ -1,0 +1,27 @@
+{
+  "name": "usermovieservices",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "test": "mocha tests/app.test.js"
+  },
+  "keywords": [],
+  "author": "Madhu Kumar K S",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "chai": "^5.1.2",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
+    "mocha": "^11.0.1",
+    "mongoose": "^8.9.1",
+    "nodemon": "^3.1.9",
+    "should": "^13.2.3",
+    "superset": "^2.0.1",
+    "supertest": "^7.0.0"
+  }
+}
