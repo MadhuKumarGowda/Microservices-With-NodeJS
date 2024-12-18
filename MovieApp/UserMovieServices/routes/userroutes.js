@@ -5,6 +5,10 @@ const router = express.Router();
 const user = require("../model/user")
 let TOKEN_KEY = "gfg_JWT_SECRETKEY";
 
+// POST Route to create new user
+// it also validates the inputs, make sure none of the inputs are empty
+// then, validate if user already present in database
+// it add new user to database then return JWT token
 router.post("/", async(req,res)=>{
     try {
         const {email, username, password, watchlist } = req.body;
@@ -37,6 +41,7 @@ router.post("/", async(req,res)=>{
     }
 });
 
+// Get all the users from table
 router.get("/", async(req,res)=>{
    const data = await user.find()
         if(!data){
